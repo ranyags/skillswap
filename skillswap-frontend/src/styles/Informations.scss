@@ -1,0 +1,28 @@
+.informations-section {
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #5b00e0;
+}
+
+.info-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card li {
+  margin-bottom: 10px;
+}

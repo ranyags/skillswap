@@ -1,0 +1,96 @@
+.add-review-page {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-review-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeInAvis 1s ease;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    .star {
+      cursor: pointer;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+
+    &:focus {
+      border-color: #6a11cb;
+    }
+  }
+
+  button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #2575fc;
+    }
+  }
+}
+
+@keyframes fadeInAvis {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .add-review-container {
+    padding: 20px;
+  }
+
+  .rating-stars {
+    .star {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

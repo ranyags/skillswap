@@ -1,0 +1,16 @@
+Scrum Roles:
+-product owner : defines the product vision etc 
+-Scrum master : ensures the team follows agile principles
+-dev team  : the people who actually build the product 
+
+Scrum Events :
+- Sprint (1-4 weeks) : where team works on delivering a shippable product increment 
+-Sprint Planning : the team selects backlog items to work on and plans the sprint 
+- daily sprint (stand up ) : a short meeting  to discuss the progress roadblocks and plans for the day 
+sprint review 
+-sprint retrospective 
+
+Scrum Artifacts
+-Product Backlog: A prioritized list of tasks, features, and improvements managed by the Product Owner.
+-Sprint Backlog: A subset of the Product Backlog that the team commits to delivering in the current sprint.
+-Increment: The sum of all completed backlog items at the end of the sprint. It must be a working product that can be      released

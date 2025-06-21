@@ -1,0 +1,32 @@
+{
+  "Bienvenue sur SkillSwap": "Bienvenue sur SkillSwap",
+  "Une plateforme pour échanger et partager vos compétences facilement.": "Une plateforme pour échanger et partager vos compétences facilement.",
+  "Créer un compte": "Créer un compte",
+  "Découvrir les compétences": "Découvrir les compétences",
+  "Accueil": "Accueil",
+  "Profil": "Profil",
+  "Discussions": "Discussions",
+  "Login": "Connexion",
+  "Register": "S'inscrire",
+  "Déconnexion": "Déconnexion",
+  "Chargement du profil...": "Chargement du profil...",
+  "Informations": "Informations",
+  "Compétences": "Compétences",
+  "Avis reçus": "Avis reçus",
+  "Notifications": "Notifications",
+  "Messages": "Messages",
+  "Bienvenue dans votre espace personnel !": "Bienvenue dans votre espace personnel !",
+  "Utilisez le menu à gauche pour naviguer entre les sections.": "Utilisez le menu à gauche pour naviguer entre les sections.",
+  "editProfile": {
+    "title": "Modifier le profil",
+    "fullName": "Nom complet",
+    "country": "Pays",
+    "city": "Ville",
+    "phone": "Téléphone",
+    "gender": "Sexe",
+    "birthdate": "Date de naissance",
+    "bio": "Bio",
+    "profileImage": "Image de profil",
+    "save": "💾 Sauvegarder"
+  }
+}
