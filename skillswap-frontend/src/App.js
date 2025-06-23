@@ -1,0 +1,31 @@
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Profile from "./pages/Profile";
+import EditProfile from "./pages/EditProfile";
+import Skills from "./pages/Skills";
+import Chat from "./pages/Chat";
+import UserList from "./pages/UserList";
+import AdminDashboard from "./pages/AdminDashboard";
+import Unauthorized from "./pages/Unauthorized";
+import Notifications from "./pages/Notifications";
+import Avis from "./pages/Avis";
+import AddReview from "./pages/AddReview";
+import AddPost from "./pages/AddPost";
+import AllPosts from "./pages/AllPosts";
+import ProfileInformations from "./pages/ProfileInformations";
+import ProfileSkills from "./pages/ProfileSkills";
+import ProfileAvis from "./pages/ProfileAvis";
+import ProfileNotifications from "./pages/ProfileNotifications";
+import ProfileMessages from "./pages/ProfileMessages";
+import PrivateRoute from "./components/PrivateRoute";
+import PrivateRouteAdmin from "./routes/PrivateRouteAdmin";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+function App() {
+    return (_jsxs(_Fragment, { children: [_jsx(Navbar, {}), _jsx(ToastContainer, { position: "bottom-right", autoClose: 3000 }), _jsx("main", { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/login", element: _jsx(Login, {}) }), _jsx(Route, { path: "/register", element: _jsx(Register, {}) }), _jsx(Route, { path: "/posts", element: _jsx(AllPosts, {}) }), _jsx(Route, { path: "/add-post", element: _jsx(AddPost, {}) }), _jsx(Route, { path: "/notifications", element: _jsx(Notifications, {}) }), _jsx(Route, { path: "/chat/:receiverId", element: _jsx(Chat, {}) }), _jsx(Route, { path: "/users", element: _jsx(UserList, {}) }), _jsx(Route, { path: "/skills/:skillId/avis", element: _jsx(Avis, {}) }), _jsx(Route, { path: "/profile", element: _jsx(PrivateRoute, { children: _jsx(Profile, {}) }) }), _jsx(Route, { path: "/profile/edit", element: _jsx(PrivateRoute, { children: _jsx(EditProfile, {}) }) }), _jsx(Route, { path: "/skills", element: _jsx(PrivateRoute, { children: _jsx(Skills, {}) }) }), _jsx(Route, { path: "/add-review", element: _jsx(PrivateRoute, { children: _jsx(AddReview, {}) }) }), _jsx(Route, { path: "/profile/informations", element: _jsx(PrivateRoute, { children: _jsx(ProfileInformations, {}) }) }), _jsx(Route, { path: "/profile/competences", element: _jsx(PrivateRoute, { children: _jsx(ProfileSkills, {}) }) }), _jsx(Route, { path: "/profile/avis", element: _jsx(PrivateRoute, { children: _jsx(ProfileAvis, {}) }) }), _jsx(Route, { path: "/profile/notifications", element: _jsx(PrivateRoute, { children: _jsx(ProfileNotifications, {}) }) }), _jsx(Route, { path: "/profile/messages", element: _jsx(PrivateRoute, { children: _jsx(ProfileMessages, {}) }) }), _jsx(Route, { path: "/admin", element: _jsx(PrivateRouteAdmin, { children: _jsx(AdminDashboard, {}) }) }), _jsx(Route, { path: "/unauthorized", element: _jsx(Unauthorized, {}) })] }) })] }));
+}
+export default App;

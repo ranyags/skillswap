@@ -1,0 +1,318 @@
+.edit-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.edit-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.edit-card h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #4b0082;
+  text-align: center;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.avatar-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6a11cb;
+  margin-bottom: 12px;
+}
+
+.avatar-section input {
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.birthdate-selects {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.birthdate-selects select {
+  flex: 1;
+  min-width: 100px;
+}
+
+.save-button {
+  margin-top: 25px;
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  background-color: #5711b8;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+select,
+input[type="date"] {
+  background-color: #f3f4f6;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.4);
+  cursor: pointer;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box; 
+}
+.edit-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.edit-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.edit-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.edit-card h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #4b0082;
+  text-align: center;
+}
+
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.avatar-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6a11cb;
+  margin-bottom: 12px;
+}
+
+.avatar-section input[type="file"] {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  color: #111827;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.birthdate-selects {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.birthdate-selects select {
+  flex: 1;
+  min-width: 100px;
+}
+
+.save-button {
+  margin-top: 25px;
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-button:hover {
+  background-color: #5711b8;
+}
+
+.loading {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+select,
+input[type="date"] {
+  background-color: #f3f4f6;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.3s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.4);
+  cursor: pointer;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box; 
+}
+.edit-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.back-button {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+.back-button-top {
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  background-color: #ede9fe;
+  color: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: #ddd6fe;
+  }
+}

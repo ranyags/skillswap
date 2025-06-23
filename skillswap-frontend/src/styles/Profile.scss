@@ -1,0 +1,138 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #ff6b6b; /* TEST: Changed to bright red background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(to bottom, #5b00e0, #7c3aed);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-summary {
+  text-align: center;
+  margin-bottom: 25px;
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(19, 231, 36, 0.452);
+    margin-bottom: 10px;
+  }
+
+  .user-name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .user-email {
+    font-size: 14px;
+    color: #ddd;
+  }
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  button {
+    background: transparent;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &.active {
+      background: rgba(255, 255, 255, 0.2);
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.logout-btn {
+  margin-top: 30px;
+  background: #e11d48;
+  color: white;
+  font-weight: bold;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #be123c;
+  }
+}
+
+/* ===== Main Section ===== */
+.main-section {
+  flex: 1;
+  padding: 40px;
+}
+
+/* ===== Responsive Sidebar ===== */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    button {
+      font-size: 14px;
+      margin: 5px;
+      padding: 8px 10px;
+    }
+  }
+
+  .logout-btn {
+    margin: 15px auto 0;
+  }
+
+  .main-section {
+    padding: 20px;
+  }
+
+  .profile-summary {
+    display: none;
+  }
+}

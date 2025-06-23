@@ -1,0 +1,235 @@
+.skills-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 0.6s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.skills-title {
+  text-align: center;
+  font-size: 28px;
+  color: #5b00e0;
+  margin-bottom: 25px;
+}
+
+.success-message {
+  background-color: #e6ffe6;
+  border-left: 6px solid #28a745;
+  color: #1c662d;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  animation: fadeInDown 0.4s ease-in-out;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.add-skill-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.add-skill-form input[type="text"],
+.add-skill-form input[type="file"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #222;
+}
+
+.add-button {
+  background-color: #7209b7;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  background-color: #5b00e0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item {
+  padding: 20px;
+  background: #fdfdff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(95, 0, 179, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.skill-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(95, 0, 179, 0.2);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.skill-description {
+  font-style: italic;
+  color: #666;
+  margin: 5px 0 10px;
+}
+
+.skill-author {
+  display: block;
+  font-size: 0.9rem;
+  color: #7c3aed;
+  font-weight: 500;
+  margin: 5px 0;
+  background-color: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.download-link {
+  color: #5f00b3;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+.skill-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.edit-input {
+  padding: 8px;
+  margin-right: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button,
+.voir-avis-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.edit-button {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0284c7;
+}
+
+.delete-button {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.voir-avis-button {
+  background-color: #facc15;
+  color: #111827;
+  display: inline-block;
+  text-decoration: none;
+}
+.skill-actions button,
+.voir-avis-button {
+  transition: transform 0.2s ease;
+}
+
+.skill-actions button:hover,
+.voir-avis-button:hover {
+  transform: scale(1.05);
+}
+
+.skill-average {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fef3c7;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}
+
+.skill-average:hover {
+  background-color: #fde68a;
+}

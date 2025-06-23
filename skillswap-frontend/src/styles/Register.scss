@@ -1,0 +1,249 @@
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.register-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+
+  .highlight {
+    color: #6a11cb;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    background-color: #bcc8f0;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: #6a11cb;
+      outline: none;
+    }
+  }
+}
+
+.error-text {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  background: #ffeaea;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid red;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #1a5ed0;
+  }
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+
+  span {
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+*/
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #6a11cb, #2575fc);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.register-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+
+  .highlight {
+    color: #6a11cb;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    &:focus {
+      border-color: #6a11cb;
+      outline: none;
+    }
+  }
+
+  select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6,9 12,15 18,9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+}
+
+.error-text {
+  color: #d32f2f;
+  background-color: #fdecea;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  border: 1px solid #d32f2f;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #1a5ed0;
+  }
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+
+  span {
+    color: #2575fc;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
